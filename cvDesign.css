@@ -1,10 +1,6 @@
-/* *{
-    margin: 0;
-    padding: 0;
-}*/
-
-body{
-    background-color:rgb(180, 180, 180);
+/* Estilos generales */
+body {
+    background-color: rgb(180, 180, 180);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,42 +8,47 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
-#page{
+#page {
     background: #ffffff;
-    width: 45%;
-    height: 100%;
+    width: 90%; /* Ajuste a 90% para pantallas grandes */
+    max-width: 1200px; /* Limita el ancho máximo */
     display: flex;
+    flex-wrap: wrap; /* Para que los elementos se apilen en pantallas pequeñas */
+    margin: 20px 0;
 }
 
-/* --------- SIDE (Descripcion, contacto, pasatiempos e idiomas) --------- */
-
-#side{
+/* --------- SIDE --------- */
+#side {
     background-color: #232323;
-    width: 35%;
-    height: 100%;
+    width: 30%; /* Menor porcentaje para pantallas grandes */
     color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-#photo{
+#photo {
     width: 100%;
-    height: 310px;
+    height: auto;
+    max-height: 300px; /* Controlar la altura máxima */
+    object-fit: cover;
 }
 
-#descripcion{
+#descripcion {
     color: #f9c911;
     text-align: justify;
     margin: 10%;
-    font-size: medium;
+    font-size: 1rem; /* Cambiar a unidades relativas */
 }
 
-.columnTitle{
+/* Ajuste de la estructura del contenido */
+.columnTitle {
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-left: 15%;
 }
 
-.sideLine{
+.sideLine {
     height: 3px;
     width: 85%;
     background-color: #f9c911;
@@ -55,146 +56,79 @@ body{
     margin-left: 15%;
 }
 
-.icontacto{
+/* Contacto */
+.icontacto {
     width: 35px;
     height: 35px;
     margin-left: 15%;
-    
 }
 
-.contacto{
+.contacto {
     display: inline-block;
     font-size: small;
     vertical-align: text-bottom;
 }
 
-.hobbies{
+/* Hobbies */
+.hobbies {
     width: 50px;
     height: 50px;
 }
 
-#hobbies{
+#hobbies {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin: 7% 2% 7% 20%;
 }
 
-.langue{
-    font-size: small;
-    margin: 5% 0 20%;
-    list-style: none;
-}
-
-
-/* --------- BASE (Educacion, Experiencia laboral) --------- */
-
-.base{
+/* --------- BASE --------- */
+.base {
     padding: 0 5%;
     color: #464646;
+    width: 70%; /* Ajustar para pantallas más grandes */
 }
 
-.educacion{
+.educacion {
     margin-left: 5%;
 }
 
-#espFlag{
-    display: flex;
-    justify-content: right;
-    
-}
-
-#idioma{
+/* Otros estilos para títulos y secciones */
+#idioma {
     letter-spacing: 3.5px;
-    font-size: 35px;
+    font-size: 2rem; /* Tamaño de fuente relativo */
     font-weight: bold;
     color: #464646;
     margin: 3.5% 2%;
 }
 
-#flag{
-    height: 50px;
-    margin: 2% 0 0 0;
-    border-radius: 100%;
-    border-width: 3px;
-    border-color: #464646;
-    border-style: solid;
+#info {
+    margin-top: 40%;
 }
 
-
-#info{
-    margin: 40% 0 0 0;
-}
-
-.mainTitle{
+.mainTitle {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 15% 0 3% 0;
 }
 
-.baseLine{
-    height: 3px;
-    width: 100%;
-    background-color: #f9c911;
-    border-style: none;
-    margin-bottom: 3%;
-}
-
-.year{
-    border: solid #f9c911 3px;
-    border-radius: 20px;
-    background-color: #f9c911;
-    font-weight: bold;
-    padding: 0 2%;
-    display: inline-block;
-    margin-bottom: 0;
-}
-
-.place{
-    line-height: 10px;
-}
-
-.titulo{
-    font-weight: bolder;
-    line-height: 0px;
-}
-
-#tituloAdd {
-    font-weight: 550;
-    line-height: 10px;
-}
-
-
 /* --------- TOP (Nombre) --------- */
-
-header{
-    position: absolute;
-}
-
-#top{
+#top {
     width: 28%;
     height: 15%;
     margin: 4% 0 0 13%;
     border: solid #f9c911 5px;
     background-color: #f9c911;
-
 }
 
-h1{
+h1 {
     margin: 3% 5%;
-    font-weight:normal;
+    font-weight: normal;
     text-transform: uppercase;
-    display: inline-block;
-    justify-content: center;
-    font-size: 40px;
+    font-size: 2rem;
 }
 
-h2{
+h2 {
     margin: 0 8%;
-    text-transform: uppercase;
-    font-weight: normal;
-    font-size: larger;
-    letter-spacing: 2px;
-    color: #ffffff;
-    font-size: 25px;
+   
 }
