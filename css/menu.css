@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-menu{
+    text-decoration: none;
+    z-index: 0;
+}
+
+.top-menu img{
+    width: 5rem;
+}
+
+.center-menu{
+    z-index: 1;
+    width: auto;
+    position: absolute;
+    
+}
+
+.center-menu a{
+    text-decoration: none;
+    font-size: 3rem;
+    line-height: 6rem;
+    
+}
+
+.center-menu ul{
+    list-style: none;
+    text-align: center;
+    
+}
+
+li:hover{
+    width: 20rem;
+    background-color: darkgoldenrod;
+    opacity: 70%;
+    border-radius: 4rem;
+}
+ 
+/* ----- IMAGENES ----- */
+
+.img{
+    z-index: 1;
+    display: none;
+}
+
+
+
+/* ----- DISPLAY IMG ----- */
+
+.list:hover .img{
+    display: inline-block;
+}
