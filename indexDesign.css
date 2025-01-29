@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ------ COLORES ------- */
+:root{
+    --colorBg1: rgb(20, 3, 3);
+    --colorBg2: rgb(165, 22, 22);
+    --color1: rgb(216, 182, 164);
+    --color2: #FF9800;
+    --color3: #B80000;
+    --color4: #5F8670;
+    --color5: #290303;
+    --circle-size: 80%;
+    --blending: hard-light;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-gradient{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    background: linear-gradient(30deg, var(--colorBg2), var(--colorBg1));
+    top: 0;
+    left: 0;
+    z-index: 1;
+}   
+
+svg{
+    display: none;
+}
+
+.grad-container{
+    border-radius: 500px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    min-width: 300px;
+    overflow: hidden;
+    background-color: #EEEEEE;
+    transform: scale(0.5);
+    filter: blur(80px);
+}
+
+.g1{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    margin: auto;
+    background: conic-gradient(var(--color1), var(--color2), var(--color4), var(--color3), var(--color5));
+    animation: alternate 6s ease-in-out infinite;
+}
+
+.g2{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    margin: auto;
+    background: radial-gradient(circle at center, violet 0, purple 50%) no-repeat;
+    mix-blend-mode: var(--blending);
+
+    top: -50%;
+    left: -50%;
+    animation: alternate-reverse 6s ease-in-out infinite;
+    opacity: 0.7;
+}
+
+.iniciar{
+    z-index: 2;
+}
+
+.iniciar button{
+    background-color: #EEE222;
+    border-radius: 25px;
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 50px;
+    border: none;
+    font-family: Impact;
+    font-size: larger;
+    
+}
+
+
+  
