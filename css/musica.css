@@ -1,0 +1,113 @@
+body{
+    background-color: var(--color4);
+}
+
+/* ------ COLORES ------- */
+:root{
+    --color1: #000F08;
+    --color2: #152829;
+    --color3: #5E5958;
+    --color4: #EBFFF2;
+    --color5: #709799;
+}
+
+
+.title{
+    z-index: 1;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.18);
+    height: 5rem;
+    overflow:hidden
+}
+
+.title h1{
+    font-size: 3rem;
+    color: var(--color4);
+}
+
+.music{
+    z-index: 2;
+    width: 100vw;
+    top: 5rem;
+    position: absolute;
+    text-align: center;
+    /*background-color: aqua;*/
+}
+
+img{
+    width: auto;
+    max-width: 50vw;
+}
+
+  .title > div {
+    display: flex;
+    width: 100%;
+    
+  }
+  .title > div p {
+    width: 100%;
+  }
+  .title > .animar {
+    position: absolute;
+    left: 0px;
+    animation: animar linear 7s infinite;
+    transform: translate(0);
+  }
+
+  .title > .animar2 {
+    position: absolute;
+    left: 0px;
+    animation: animar2 linear 7s infinite;
+    transform: translate(0);
+  }
+
+@keyframes animar{
+    from {transform:translate(0%)}
+    to {transform:translate(-100%)}
+}
+
+@keyframes animar2 {
+    from {transform:translate(100%)}
+    to {transform:translate(0%)}
+    }
+
+
+
+.playlists{
+    background-color: var(--color4);
+    margin: 3rem;
+    display: flex;
+}
+
+h2{
+    margin: 1rem;
+    font-size: 2.5rem;
+}
+
+.playlists p{
+    margin: 1rem;
+    /*background-color: aquamarine;*/
+    width: 40vw;
+    font-size: 1.2rem;
+}
+
+.playlist{
+    width: 80vw;
+    text-align: center;
+    margin: auto;
+}
+
+.main{
+    margin: 3rem;
+    max-height: 100vh;
+    /*background-color: bisque;*/
+}
+
+.main p{
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}

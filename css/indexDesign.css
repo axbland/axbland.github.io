@@ -1,17 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Lexend Exa", serif;
 }
 
 /* ------ COLORES ------- */
 :root{
-    --colorBg1: rgb(20, 3, 3);
-    --colorBg2: rgb(165, 22, 22);
-    --color1: rgb(216, 182, 164);
-    --color2: #FF9800;
-    --color3: #B80000;
-    --color4: #5F8670;
-    --color5: #290303;
+    --color1: #000F08;
+    --color2: #152829;
+    --color3: #5E5958;
+    --color4: #EBFFF2;
+    --color5: #709799;
     --circle-size: 80%;
     --blending: hard-light;
 }
@@ -28,7 +29,7 @@ body{
     height: 100vh;
     position: absolute;
     overflow: hidden;
-    background: var(--colorBg1);
+    background: var(--color1);
     top: 0;
     left: 0;
     z-index: 1;
@@ -45,9 +46,9 @@ svg{
     margin: auto;
     width: 100vw;
     height: 100vh;
-    min-width: 300px;
+    min-width: 30rem;
     overflow: hidden;
-    background-color: #EEEEEE;
+    background-color: var(--color4);
     transform: scale(0.5);
     filter: blur(80px);
 }
@@ -58,41 +59,32 @@ svg{
     height: 100vh;
     inset: 0;
     margin: auto;
-    background: radial-gradient(var(--color5), var(--color2), var(--color4), var(--color3), var(--color3));
-    animation: alternate 6s ease-in-out infinite;
+    background: radial-gradient(var(--color4), var(--color2), var(--color1), var(--color3), var(--color5));
+    animation: reverse 8s ease-in-out infinite;
 }
-
-/*.g2{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    inset: 0;
-    margin: auto;
-    background: radial-gradient(circle at center, violet 0, purple 50%) no-repeat;
-    mix-blend-mode: var(--blending);
-
-    top: -50%;
-    left: -50%;
-    animation: alternate-reverse 6s ease-in-out infinite;
-    opacity: 0.7;
-}*/
 
 .iniciar{
     z-index: 2;
 }
 
 .iniciar a{
-    padding: 15px;
+    padding: 20px 25px;
     min-width: 4vw;
     max-width: 5vw;
     min-height: 4vh;
     max-height: 5vh;
-    background: #EEE222;
+    background: var(--color1);
     border-radius: 3rem;
     border: none;
-    font-family: Impact;
+    color: var(--color5);
     font-size: 2rem;
     text-decoration: none;
+}
+
+a:hover{
+    background-color: var(--color5);
+    color: var(--color1);
+    transition: 0.5s ease;
 }
 
 
