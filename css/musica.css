@@ -13,26 +13,29 @@ body{
 
 
 .title{
-    z-index: 1;
+    z-index: 10;
     justify-content: center;
     position: relative;
     width: 100vw;
     
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.18);
     height: 5rem;
-    overflow:hidden
+    overflow:hidden;
+    /* background-color: aqua; */
 }
 
 .title h1{
     font-size: 3rem;
     color: var(--color4);
+    justify-content: center;
+
 }
 
 .music{
-    z-index: 2;
+    z-index: 20;
     width: 100vw;
-    top: 5rem;
-    position: absolute;
+    top: 1rem;
+    position: relative;
     text-align: center;
     /*background-color: aqua;*/
 }
@@ -40,6 +43,12 @@ body{
 img{
     width: auto;
     max-width: 50vw;
+}
+
+.titulo > div h1{
+    height: auto;
+    justify-content: center;
+    background-color: aqua;
 }
 
   .title > div {
@@ -80,6 +89,7 @@ img{
     background-color: var(--color4);
     margin: 3rem;
     display: flex;
+    max-height: 100vh;
 }
 
 h2{
@@ -110,4 +120,33 @@ h2{
     margin: 1rem;
     text-align: center;
     font-size: 1.2rem;
+}
+
+@media (max-width:991px) {
+    
+    .titulo{
+        width: auto;
+    }
+    .playlist{
+        z-index: 10;
+        padding: 80px 0;
+        flex-direction: column;
+        min-height: 80vh;
+    }
+
+    .main p{
+        flex-basis: 100%;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .main{
+        padding: 20px;
+        min-height: 0vh;
+        max-height: 100vh;
+    }
+
+    footer{
+        padding: 30px;
+    }
 }
