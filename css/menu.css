@@ -1,24 +1,3 @@
-<<<<<<< Updated upstream
-*{
-    padding: 0;
-    margin: 0;
-}
-
-body{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.top-menu{
-    text-decoration: none;
-    z-index: 0;
-}
-
-.top-menu img{
-    width: 5rem;
-=======
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
 
 *{
@@ -103,23 +82,10 @@ body{
 
 .top-menu img{
     width: 2rem;
->>>>>>> Stashed changes
 }
 
 .center-menu{
     z-index: 1;
-<<<<<<< Updated upstream
-    width: auto;
-    position: absolute;
-    
-}
-
-.center-menu a{
-    text-decoration: none;
-    font-size: 3rem;
-    line-height: 6rem;
-    
-=======
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,24 +97,11 @@ body{
     font-size: 2.5rem;
     line-height: 6rem;
     color: var(--color4);
->>>>>>> Stashed changes
 }
 
 .center-menu ul{
     list-style: none;
     text-align: center;
-<<<<<<< Updated upstream
-    
-}
-
-li:hover{
-    width: 20rem;
-    background-color: darkgoldenrod;
-    opacity: 70%;
-    border-radius: 4rem;
-}
- 
-=======
     text-transform: uppercase;
 }
 
@@ -171,17 +124,6 @@ footer{
     background-color: var(--color2);
 }
 
->>>>>>> Stashed changes
-/* ----- IMAGENES ----- */
-
-.img{
-    z-index: 1;
-    display: none;
-<<<<<<< Updated upstream
-=======
-    
-}
-
 .dcchange{
     display: none;
 }
@@ -190,22 +132,8 @@ footer{
     display: none;
 }
 
-/* ----- DISPLAY IMG ----- */
-
-.musica:hover div{
-    width: 90vw;
-    display: inline-block;
->>>>>>> Stashed changes
-}
 
 
-
-<<<<<<< Updated upstream
-/* ----- DISPLAY IMG ----- */
-
-.list:hover .img{
-    display: inline-block;
-=======
 /* Menu Responsive */
 
 @media (max-width:991px) {
@@ -290,5 +218,4 @@ footer{
         background: linear-gradient(110deg, var(--color2),var(--color5));
         
     }
->>>>>>> Stashed changes
 }
