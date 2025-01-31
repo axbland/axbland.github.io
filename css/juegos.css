@@ -1,0 +1,75 @@
+.titulo{
+    background-color: var(--color4);
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color1);
+}
+/* ------ COLORES ------- */
+:root{
+    --color1: #000F08;
+    --color2: #152829;
+    --color3: #5E5958;
+    --color4: #EBFFF2;
+    --color5: #709799;
+}
+
+.contenedor{
+    margin: 3rem;
+    color: var(--color4);
+}
+
+.jsection{
+    display: flex;
+}
+
+.right img{
+    padding-right: 0.5rem;
+}
+
+.left img{
+    padding-left: 0.5rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+.section{
+    padding: 2rem;
+    position: relative;
+}
+
+/* ------ SECCION 1 ------- */
+
+.s1{
+    z-index: 10;
+    position: relative;
+    vertical-align: left;
+}
+
+
+/* ------ SECCION 2 ------- */
+
+.s2{
+    z-index: 20;
+    position: absolute;
+    vertical-align: right;
+    display: none;
+}
+
+/* ------ SECCION 3 ------- */
+
+.s3{
+    z-index: 10;
+    position: absolute;
+    vertical-align: left;
+    display: none;
+}
+
+/* ------ LISTAS ------- */
+.jlist{
+    display: none;
+}
