@@ -42,9 +42,10 @@ h2{
 }
 
 .main{
-    margin: 3rem;
+    padding: 3rem 20rem;
+    width: 100vw;
     max-height: 100vh;
-    /*background-color: bisque;*/
+    background-color: var(--color5);
 }
 
 .main p{
@@ -66,7 +67,7 @@ h2{
     }
 
     .main{
-        padding: 5px;
+        padding: 2rem 5rem;
         min-height: 0vh;
         max-height: 100vh;
         /* background-color: aquamarine; */
