@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.titulo{
+    background-color: var(--color1);
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color4);
+}
+/* ------ COLORES ------- */
+:root{
+    --color1: #000F08;
+    --color2: #152829;
+    --color3: #5E5958;
+    --color4: #EBFFF2;
+    --color5: #709799;
+}
+
+.influ{
+    margin: 2rem;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.pimg{
+    height: 60vh;
+    width: auto;
+    padding-left: 2rem;
+}
+
+.persona{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.name{
+    /* background-color: aqua; */
+    width: 10vw;
+    height: 60vh;
+    font-size: 6rem;
+    /* inline-size: 30rem; */
+    margin-inline: 1rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+
+    text-align: end;
+    line-height: 10vh;
+    color: var(--color2);
+}
+
+.influ p{
+    width: auto;
+    text-align: justify;
+    margin: 2rem;
+    /* background-color: aqua; */
+    padding: 0 10rem;
+}
+
+
+
+@media (max-width:991px) {
+    .influ{
+        text-align: center;
+        /* margin: auto; */
+        /* display: flex; */
+        min-height: 0vh;
+        width: auto;
+        bottom: 0;
+    }
+
+    .pimg{
+        max-height: 45vh;
+        width: auto;
+        padding-right: 5rem;
+    }
+
+    .name{
+        /* background-color: aqua; */
+        padding-right: 5rem;
+        flex-basis: 100%;
+        text-align: center;
+        font-size: 3.2rem;
+        margin-inline: 0.3rem;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    
+        text-align: end;
+        line-height: 7vh;
+        color: var(--color2);
+    }
+
+    .influ p{
+        width: auto;
+        text-align: justify;
+        /* background-color: aqua; */
+        padding: 0 2rem;
+    }
+
+}
