@@ -42,34 +42,133 @@ h3{
     position: relative;
 }
 
-/* ------ SECCION 1 ------- */
+/* ******* SECCION 1 ******* */
 
 .s1{
     z-index: 10;
     position: relative;
     vertical-align: left;
+    /* background-color: bisque; */
+    height: 31rem;
+    margin: 0 60rem 0 6rem;
+    padding-bottom: 0;
 }
 
+.s1 img{
+    width: 25rem;
+}
 
-/* ------ SECCION 2 ------- */
+/* ------ Club Penguin ------- */
+.img1{
+    z-index: 1;
+    position: absolute;
+    
+}
+
+/* ------ Doki Doki ------- */
+.img2{
+    position: absolute;
+    z-index: 2;
+    padding-left: 7rem;
+    width: 5rem;
+    padding-top: 13rem;
+}
+
+/* ******* LISTA 1 ******* */
+
+.jl1{
+    /* background-color: aquamarine; */
+    position: absolute;
+    padding-top: 20vh;
+    padding-left: 45vw;
+    /* position: absolute; */
+}
+
+.jl1 ul{
+    height: 10vh;
+    width: 60vh;
+}
+
+.jl1 li{
+    font-size: 1.7rem;
+}
+
+/* ******* LISTA 2 ******* */
+
+.mid{
+    /* background-color: bisque; */
+    height: 85vh;
+}
+
+.jl2{
+    /* background-color: aquamarine; */
+    position: absolute;
+    padding-top: 20vh;
+    padding-left: 15vw;
+    /* position: absolute; */
+    
+}
+
+.jl2 ul{
+    height: 20vh;
+    width: 60vh;
+}
+
+.jl2 li{
+    font-size: 1.7rem;
+}
+
+/* ******* SECCION 2 ******* */
 
 .s2{
+    padding: 0;
     z-index: 20;
-    position: absolute;
+    position: relative;
     vertical-align: right;
-    display: none;
+    /* background-color: bisque; */
+    height: 42rem;
+    margin: 0 6rem 0 60rem;
 }
 
-/* ------ SECCION 3 ------- */
+.s2 img{
+    width: 25rem;
+}
 
-.s3{
-    z-index: 10;
+/* ------ FNAF ------- */
+.img3{
+    z-index: 2;
     position: absolute;
-    vertical-align: left;
-    display: none;
+    padding-left: 4rem;
+    /* display: none; */
 }
 
-/* ------ LISTAS ------- */
-.jlist{
-    display: none;
+/* ------ Cult ------- */
+.img4 img{
+    width: 20rem;
 }
+
+.img4{
+    position: absolute;
+    z-index: 1;
+    padding-left: 17rem;
+    width: 3rem;
+    padding-top: 7rem;
+}
+
+.img4 h3{
+    align-self: center;
+}
+
+/* ------ HK ------- */
+.img5 img{
+    width: 32rem;
+    z-index: 3;
+}
+
+.img5{
+    /* width: 5rem; */
+    padding-top: 28rem;
+}
+
+
+
